@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
-import HomePage from "../../page_objects/home.page";
-import IndustryPage from "../../page_objects/industry.page"
+import HomePage from "../../../page_objects/home.page";
+import IndustryPage from "../../../page_objects/industry.page"
 import verificationText from "../../fixtures/verificationText.json";
-import UseCasesPage from "../../page_objects/use.cases.page";
-import PartnershipsPage from "../../page_objects/partnerships.page";
-import CaseStudiesPage from "../../page_objects/case.studies.page";
-import DemoPage from "../../page_objects/demo.page";
+import UseCasesPage from "../../../page_objects/use.cases.page";
+import PartnershipsPage from "../../../page_objects/partnerships.page";
+import CaseStudiesPage from "../../../page_objects/case.studies.page";
+import DemoPage from "../../../page_objects/demo.page";
 
 describe("Page redirections", () => {
   beforeEach(() => {
