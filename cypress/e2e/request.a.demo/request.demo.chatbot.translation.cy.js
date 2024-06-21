@@ -18,6 +18,7 @@ describe("Request a demo", () => {
     HomePage.productButton.eq(0).click();
     HomePage.productSubmenuChatbotTranslationButton.eq(0).click();
     ChatbotTranslationPage.requestADemoButton.eq(0).click();
+    cy.wait(5000);
     DemoForm.companyEmailField.type(companyEmail, { force: true });
     DemoForm.firstNameField.type(firstName), { force: true };
     DemoForm.lastNameField.type(lastName);
