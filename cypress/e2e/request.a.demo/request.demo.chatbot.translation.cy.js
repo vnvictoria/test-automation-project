@@ -20,6 +20,7 @@ describe("Request a demo", () => {
     ChatbotTranslationPage.requestADemoButton.eq(0).click();
     cy.wait(5000);
     DemoForm.companyEmailField.type(companyEmail, { force: true });
+    cy.get('#pum-57863').invoke('show');
     DemoForm.firstNameField.type(firstName), { force: true };
     DemoForm.lastNameField.type(lastName);
     //Clicking on the Submit button is commented in order to avoid spamming
